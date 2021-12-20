@@ -1,0 +1,13 @@
+.lite_workspace.lua
+yarn.lock
+
+/bin
+/dist
+/bundle
+/node_modules
+
+neutralino.js
+
+.storage
+.tmp
+*.log

@@ -1,0 +1,45 @@
+{
+  "applicationId": "js.neutralino.sample",
+  "version": "1.0.0",
+  "defaultMode": "window",
+  "port": 0,
+  "documentRoot": "/bundle/",
+  "url": "/",
+  "enableServer": true,
+  "enableNativeAPI": true,
+  "exportAuthInfo": false,
+  "logging": {
+    "enabled": false,
+    "writeToLogFile": false
+  },
+  "nativeBlockList": [],
+  "globalVariables": {},
+  "modes": {
+    "window": {
+      "title": "Neutralino Template",
+      "width": 800,
+      "height": 500,
+      "minWidth": 400,
+      "minHeight": 200,
+      "fullScreen": false,
+      "alwaysOnTop": false,
+      "icon": "/public/icons/appIcon.png",
+      "enableInspector": true,
+      "borderless": false,
+      "maximize": false,
+      "hidden": true,
+      "resizable": true,
+      "exitProcessOnClose": true
+    },
+    "browser": {},
+    "cloud": {}
+  },
+  "cli": {
+    "binaryName": "neutralino-template",
+    "resourcesPath": "/bundle/",
+    "extensionsPath": "/extensions/",
+    "clientLibrary": "/public/neutralino.js",
+    "binaryVersion": "4.0.0",
+    "clientVersion": "3.0.0"
+  }
+}
