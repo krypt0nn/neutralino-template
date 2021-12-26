@@ -1,13 +1,11 @@
-import * as Vue from 'vue/dist/vue.esm-bundler';
+import App from '../about.svelte';
 
-import Window from '../ts/neutralino/Window';
+declare const Neutralino;
 
-Vue.createApp({
-    data: () => {
-        return {
-            title: 'about'
-        };
-    },
+Neutralino.init();
 
-    mounted: () => Window.current.show()
-}).mount('#app');
+const app = new App({
+    target: document.getElementById('app')!
+});
+
+export default app;
