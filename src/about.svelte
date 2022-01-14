@@ -1,18 +1,23 @@
 <script lang="ts">
+    import { Windows } from '@empathize/framework';
     import { onMount } from 'svelte';
 
-    import Window from './ts/neutralino/Window';
+    import { listFiles } from './ts/example';
 
-    import Counter from './components/Counter.svelte';
+    let files: string[] = [];
+
+    listFiles().then((list) => files = list);
 
     // Show the window when all the content will be loaded
     onMount(() => {
-        Window.current.show();
+        Windows.current.show();
     });
 </script>
 
 <main>
     <h1>This is an about window!</h1>
 
-    <Counter />
+    {#each files as file}
+        <p style="text-align: center">{file}</p>
+    {/each}
 </main>
