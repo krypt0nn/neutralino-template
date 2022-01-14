@@ -2,6 +2,7 @@
   "name": "neutralino-template",
   "version": "0.0.0",
   "type": "module",
+  "license": "GPL-3.0",
   "scripts": {
     "neu": "neu",
     "dev": "vite build && neu run --disable-auto-reload",
